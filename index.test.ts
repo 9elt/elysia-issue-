@@ -2,7 +2,7 @@ import { describe, expect, it } from "bun:test";
 import { app, response, url } from ".";
 
 describe("test", () => {
-    it("fetches the session data", async () => {
+    it("get", async () => {
         const success = await app.handle(new Request(url));
 
         expect(
